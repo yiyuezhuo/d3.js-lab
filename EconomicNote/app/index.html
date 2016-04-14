@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TITLE GOES HERE</title>
+		<meta charset="utf-8">
+		<script src="js/d3.js"></script>
+	</head>
+	<body>
+		<!-- before, empty graph -->
+		<h1>宏观经济学模型可视化</h1>
+		<div id="messageBar">数据未载入后端，未载入前端</div>
+		<input type="button" value="加载模型" id="load">
+		<!-- <input type="button" value="试算" id="test"> -->
+		<svg>
+		</svg>
+		<!-- <input type="button" value="toggle" id='toggle'> -->
+		<form name="exog">
+			<p>g<input type="text" name="g" value=100></p>
+			<p>t<input type="text" name="t" value=110></p>
+			<p>kbar<input type="text" name="kbar" value=100></p>
+			<p>m<input type="text" name="M" value=100></p>
+			<input type="button" value="Get Result!" id="getResult">
+		</form>
+	</body>
+	<script src="js/logic.js"></script>
+</html>
